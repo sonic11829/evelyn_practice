@@ -27,8 +27,8 @@ function largestPrimeFactor(num) {
     for (let i = 2; i <= num; i++) {
         while (prime(i) && num % i === 0) 
         {
-        if (!result.includes(i)) result.push(i);
-        num /= i;
+            if (!result.includes(i)) result.push(i);
+            num /= i;
         }
     }
     return result;
